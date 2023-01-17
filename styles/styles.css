@@ -1,3 +1,10 @@
+*{
+
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+
+}
+
 body{
     padding: 0;
     margin: 0;
@@ -20,17 +27,17 @@ body{
 .lado_esquerdo{
     display: flex;
     flex-direction: column;
-    margin-left: 10rem;
-    margin-right: 20rem;
-    padding: 4rem;
+    margin-left: 20rem;
+
+    
 }
 
-.digita_texto{
+.text_area{
 
     display: flex;
     justify-content:baseline;
-
-    font-family: 'Inter', sans-serif;
+    border: none;
+    
     font-style: normal;
     font-weight: 400;
     font-size: 32px;
@@ -41,7 +48,14 @@ body{
     /* Dark blue/dark-blue-300 */
 
     color: #0A3871;
+    background-color: #E5E5E5;
+    text-transform: lowercase;
 }
+
+::placeholder { color: #0A3871;}
+        .text_area:focus{
+            outline: none;
+        }
 
 .parte_baixo{
     
@@ -49,7 +63,7 @@ body{
     flex-direction: column-reverse;
     text-align: center;
     justify-content: center;
-    margin-top: 30rem;
+    margin-top: 20rem;
     
 }
 
@@ -58,9 +72,6 @@ body{
     display:flex;
 
     gap: 8px;
-
-
-
     font-family: 'Inter', sans-serif;
     font-style: normal;
     font-weight: 400;
@@ -88,9 +99,6 @@ body{
     align-items: flex-start;
     padding: 0px;
     gap: 24px;
-
-    width: 328px;
-    height: 67px;
 
 }
 
@@ -139,7 +147,6 @@ color: #FFFFFF;
     order: 1;
     flex-grow: 0;
 
-    font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
@@ -153,8 +160,8 @@ color: #FFFFFF;
 
 .lado_direito{
     
-    margin-left: 15rem;
-
+    margin-left: 10rem;
+    padding-bottom: 5rem;
     /* White */
 
     background: #FFFFFF;
