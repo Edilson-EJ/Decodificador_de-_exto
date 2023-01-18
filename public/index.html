@@ -22,7 +22,7 @@
         <div class="lado_esquerdo">
             <div class="digita_texto">
                 
-                <textarea class="text_area" cols="41" rows="4" placeholder="Digite seu Texto"></textarea>
+                <textarea id="text_area" cols="41" rows="4" placeholder="Digite seu Texto"></textarea>
             </div>
 
             <div class="parte_baixo">
@@ -31,7 +31,7 @@
                     <h6>Apenas letras minúsculas e sem acento.</h6>
                 </div>
                 <div class="buttons_cript_descrip">
-                    <button class="criptografar">Criptografar</button>
+                    <button class="criptografar" onclick="criptografar_texto()">Criptografar</button>
                     <button class="descriptografar">Descriptografar</button>
                 </div>
             </div>
@@ -43,7 +43,7 @@
                 <p id="texto_criptografado"></p>
             
             </div>
-            <div class="conteudo_caixa">
+            <div class="conteudo_caixa_click conteudo_caixa">
                 <img src="/img/High quality products 1 1.svg">
                 <h2>Nenhuma mensagem encontrada</h2>
                 <h5>Digite um texto que você deseja criptografar ou descriptografar.</h5>
@@ -52,6 +52,8 @@
 
     </div>
         
+
+    <script src="/scripts/main.js"></script>
 
 </body>
 </html>

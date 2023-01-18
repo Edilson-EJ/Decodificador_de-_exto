@@ -32,7 +32,7 @@ body{
     
 }
 
-.text_area{
+#text_area{
 
     display: flex;
     justify-content:baseline;
@@ -106,6 +106,10 @@ body{
     width: 328px;
     height: 67px;
 
+    cursor: pointer;
+
+
+
     /* Dark blue/dark-blue-300 */
 
     background: #0A3871;
@@ -132,6 +136,8 @@ color: #FFFFFF;
 .descriptografar{
     width: 328px;
     height: 67px;
+
+    cursor: pointer;
 
     /* Light gray */
 
@@ -169,7 +175,11 @@ color: #FFFFFF;
 
     box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
     border-radius: 32px;
+
+    
 }
+
+
 
 .conteudo_caixa img{
     padding-top: 13rem;
@@ -177,53 +187,53 @@ color: #FFFFFF;
 
 .conteudo_caixa h2{
     width: 336px;
-height: 58px;
+    height: 58px;
 
-font-family: 'Inter';
-font-style: normal;
-font-weight: 700;
-font-size: 24px;
-line-height: 120%;
-/* or 29px */
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 120%;
+    /* or 29px */
 
-text-align: center;
+    text-align: center;
 
-/* Gray/gray-500 */
+    /* Gray/gray-500 */
 
-color: #343A40;
+    color: #343A40;
 
 
-/* Inside auto layout */
+    /* Inside auto layout */
 
-flex: none;
-order: 0;
-align-self: stretch;
-flex-grow: 0;
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
 }
 
 .conteudo_caixa h5{
     width: 336px;
-height: 48px;
+    height: 48px;
 
-font-family: 'Inter';
-font-style: normal;
-font-weight: 400;
-font-size: 16px;
-line-height: 150%;
-/* or 24px */
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    /* or 24px */
 
-text-align: center;
+    text-align: center;
 
-/* Gray/gray-400 */
+    /* Gray/gray-400 */
 
-color: #495057;
+    color: #495057;
 
 
-/* Inside auto layout */
+    /* Inside auto layout */
 
-flex: none;
-order: 1;
-align-self: stretch;
-flex-grow: 0;
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 0;
 }
 
