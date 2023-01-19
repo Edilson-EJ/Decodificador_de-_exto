@@ -28,7 +28,7 @@ body{
     display: flex;
     flex-direction: column;
     margin-left: 20rem;
-
+    
     
 }
 
@@ -37,6 +37,7 @@ body{
     display: flex;
     justify-content:baseline;
     border: none;
+    text-decoration: none;
     
     font-style: normal;
     font-weight: 400;
@@ -166,9 +167,14 @@ color: #FFFFFF;
 
 .lado_direito{
     
-    margin-left: 10rem;
-    padding-bottom: 5rem;
-    /* White */
+    
+    height: 50rem;
+    width: 25rem;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+
+    word-wrap: break-word;
 
     background: #FFFFFF;
     /* shadow */
@@ -178,6 +184,29 @@ color: #FFFFFF;
 
     
 }
+
+.conteudo_criptografad{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 150%;
+    /* or 36px */
+    
+    
+    /* Gray/gray-400 */
+    
+    color: #495057;
+}
+
+
+.conteudo_caixa{
+    display: block;
+}
+
+.remove_conteudo_caixa{
+    display: none;
+}
+
 
 
 
@@ -189,7 +218,6 @@ color: #FFFFFF;
     width: 336px;
     height: 58px;
 
-    font-family: 'Inter';
     font-style: normal;
     font-weight: 700;
     font-size: 24px;
@@ -215,7 +243,6 @@ color: #FFFFFF;
     width: 336px;
     height: 48px;
 
-    font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
