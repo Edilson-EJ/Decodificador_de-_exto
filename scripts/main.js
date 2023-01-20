@@ -13,6 +13,7 @@ function criptografar_texto() {
     
     imprimir_texto.innerText = resultado
 
+    
 }
 
 function descriptografar_texto() {
@@ -28,4 +29,20 @@ function descriptografar_texto() {
 
     imprimir_texto.innerText = resultado
 
+}
+
+function copy_text(){
+
+    var textoCopiado = document.getElementById("texto_criptografado");
+
+    console.log("texto: ", textoCopiado.value)
+
+  // Select the text field
+    //textoCopiado.select();
+
+   // Copy the text inside the text field
+    navigator.clipboard.writeText(textoCopiado.value);
+
+  // Alert the copied text
+    alert("Copied the text: " + textoCopiado.value);
 }

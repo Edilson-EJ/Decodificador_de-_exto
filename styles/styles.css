@@ -53,10 +53,16 @@ body{
     text-transform: lowercase;
 }
 
-::placeholder { color: #0A3871;}
-        .text_area:focus{
-            outline: none;
-        }
+::placeholder{ 
+    color: #0A3871;
+
+}
+
+#text_area:focus{
+    box-shadow: 0 0 0 0;
+    outline: 0;
+}
+        
 
 .parte_baixo{
     
@@ -173,6 +179,9 @@ color: #FFFFFF;
     display: flex;
     justify-content: center;
     text-align: center;
+    
+    position: relative;
+    bottom: 4rem;
 
     word-wrap: break-word;
 
@@ -202,13 +211,39 @@ color: #FFFFFF;
 .conteudo_caixa{
     display: block;
 }
+.copy{
+    display: none;
+}
 
 .remove_conteudo_caixa{
     display: none;
 }
+.copy_conteudo_caixa{
+    display: block;
+    width: 328px;
+    height: 67px;
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+    cursor: pointer;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+
+    position: relative;
+    top: 37.5rem;
+
+    /* Dark blue/dark-blue-300 */
+
+    color: #0A3871;
+    background-color: #FFFFFF;
 
 
+    /* Inside auto layout */
 
+    flex: none;
+    order: 0;
+    flex-grow: 1;   
+}
 
 .conteudo_caixa img{
     padding-top: 13rem;
