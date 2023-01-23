@@ -2,7 +2,6 @@
 
 function criptografar_texto() {
 
-    console.log("olá ")
     var texto_digitado = document.getElementById("text_area").value
     var imprimir_texto = document.getElementById("texto_criptografado")
     
@@ -18,7 +17,6 @@ function criptografar_texto() {
 
 function descriptografar_texto() {
 
-    console.log("olá ")
     var texto_digitado = document.getElementById("text_area").value
     var imprimir_texto = document.getElementById("texto_criptografado")
     
@@ -33,16 +31,12 @@ function descriptografar_texto() {
 
 function copy_text(){
 
-    var textoCopiado = document.getElementById("texto_criptografado");
+    var textoCopiado = document.getElementById("texto_criptografado").innerText;
 
-    console.log("texto: ", textoCopiado.value)
+    navigator.clipboard.writeText(textoCopiado).then(() =>{
+      alert('texto copiado')
+    })
 
-  // Select the text field
-    //textoCopiado.select();
+    console.log("texto: ", textoCopiado)
 
-   // Copy the text inside the text field
-    navigator.clipboard.writeText(textoCopiado.value);
-
-  // Alert the copied text
-    alert("Copied the text: " + textoCopiado.value);
 }
